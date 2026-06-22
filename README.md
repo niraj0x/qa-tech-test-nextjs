@@ -29,3 +29,11 @@ Alternatively, the [Playwright VS Code extension](https://marketplace.visualstud
 - OpenAPI specification is automatically generated and available at http://localhost:3000/api/doc
 - Swagger UI pointing at the API spec is available at http://localhost:3000/swagger-ui.html
 
+## Open Bugs/Issues
+- Add Image gives no feedback when submission fails
+- Future dates are selectable everywhere a date picker is used
+- Selecting multiple keyword filters narrows results instead of broadening them
+
+## Testability concerns
+- Calendar toggle buttons have no app-level identifier (Tests currently locate them by climbing .MuiFormControl-root)
+- Same for Image cards, filter dropdown (app-defined data-testid can be added)
