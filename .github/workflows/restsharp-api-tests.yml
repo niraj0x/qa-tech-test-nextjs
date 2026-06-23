@@ -9,6 +9,7 @@ on:
 jobs:
   api-tests:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Checkout
@@ -36,7 +37,7 @@ jobs:
           npm run start &
           APP_PID=$!
 
-          npx wait-on http://localhost:3000/api/images
+          npx wait-on --timeout 60000 --verbose http://localhost:3000/api/images
 
           cd api-restsharp-tests
           dotnet restore
