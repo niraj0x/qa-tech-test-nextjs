@@ -59,7 +59,7 @@ npm run build
 npm run start &
 APP_PID=$!
 
-npx wait-on --timeout 60000 --verbose http://localhost:3000/api/images
+npx wait-on --timeout 60000 --verbose http-get://localhost:3000/api/images
 
 cd api-restsharp-tests
 dotnet restore
