@@ -1,0 +1,20 @@
+# Build outputs
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio / Rider / VS Code
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+
+# Test results
+TestResults/
+*.trx
+
+# OS junk
+.DS_Store
+
+# User-specific config overrides (don't commit secrets/local URLs)
+appsettings.*.local.json
